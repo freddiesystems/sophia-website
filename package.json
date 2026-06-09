@@ -1,0 +1,10 @@
+{
+  "name": "sophia-roth-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marketing website for Sophia Roth — online English (TEFL), 11+/SATs tutoring and childcare.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
