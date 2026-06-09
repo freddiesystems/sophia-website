@@ -157,21 +157,32 @@ const CONFIG = {
     return true;
   }
 
-  function scrollToBook() {
-    const t = $("#book");
-    if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+  // Tailored WhatsApp messages — a fallback until Cal.com / Stripe are connected,
+  // so every booking button does something the moment the site is live.
+  const WA_MSG = {
+    intro: "Hi Sophia! I'd love to book a free introductory call.",
+    babysitting: "Hi Sophia! I'd like to arrange some babysitting and a call to meet first.",
+    english: "Hi Sophia! I'd like to book a £15 English (TEFL) trial lesson.",
+    sats: "Hi Sophia! I'd like to book a £15 11+/SATs trial lesson.",
+  };
+  function whatsappFallback(key) {
+    window.open(
+      waLink(WA_MSG[key] || "Hi Sophia! I'd love to find out more about your services."),
+      "_blank",
+      "noopener"
+    );
   }
 
-  // Free call → open Cal modal, else glide to the booking section (WhatsApp fallback there)
+  // Free call → Cal.com modal when configured, otherwise message me on WhatsApp.
   function bookFree(key) {
-    if (!openCalModal(key)) scrollToBook();
+    if (!openCalModal(key)) whatsappFallback(key);
   }
 
   // Paid trial → Stripe Payment Link if set, else Cal trial event, else fallback
   function bookTrial(key) {
     const stripe = CONFIG.payments[key];
     if (stripe) { window.open(stripe, "_blank", "noopener"); return; }
-    if (!openCalModal(key)) scrollToBook();
+    if (!openCalModal(key)) whatsappFallback(key);
   }
 
   /* ---------- wire booking + payment buttons ---------- */
