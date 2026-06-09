@@ -275,6 +275,10 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.08;
 .mini .ico { color: var(--clay); margin-bottom: .6rem; }
 .mini h3 { font-size: 1.25rem; margin-bottom: .3rem; }
 .mini p { margin: 0; color: var(--ink-soft); font-size: .95rem; }
+
+/* beyond / personal highlights */
+.beyond { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+@media (max-width: 800px) { .beyond { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
 .specialisms--reverse .specialisms__copy { order: 2; }
 .specialisms--reverse .specialisms__cards { order: 1; }
 @media (max-width: 800px) {

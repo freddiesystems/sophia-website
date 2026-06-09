@@ -20,7 +20,7 @@
 
 const CONFIG = {
   cal: {
-    user: "", // ← your Cal.com username, e.g. "sophia-roth"
+    user: "sophiaroth", // Sophia's Cal.com username — booking is live
     events: {
       intro: "intro-call", // free 15-min intro call
       english: "english-trial", // £15 English (TEFL) trial hour
