@@ -277,8 +277,30 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.08;
 .mini p { margin: 0; color: var(--ink-soft); font-size: .95rem; }
 
 /* beyond / personal highlights */
-.beyond { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-@media (max-width: 800px) { .beyond { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
+.beyond { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+@media (max-width: 1000px) { .beyond { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .beyond { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
+
+/* timeline dates */
+.timeline__date { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--clay-deep); margin-bottom: .25rem; }
+
+/* statement blocks (EAL, confidentiality) */
+.statement { max-width: 760px; margin: 0 auto; text-align: center; background: var(--cream-card); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(32px, 5vw, 56px); box-shadow: var(--shadow-md); }
+.statement--quiet { background: var(--blue-wash); border-color: var(--blue-wash-2); box-shadow: var(--shadow-sm); }
+.statement__icon { display: inline-grid; place-items: center; width: 58px; height: 58px; border-radius: 16px; background: var(--blue-wash); color: var(--blue); margin-bottom: 1rem; }
+.statement--quiet .statement__icon { background: var(--cream-card); }
+.statement .section__title { font-size: clamp(1.6rem, 3.2vw, 2.2rem); }
+.statement p { color: var(--ink-soft); font-size: 1.06rem; margin: 1rem auto 0; max-width: 60ch; }
+.statement .btn { margin-top: 1.6rem; }
+
+/* testimonials */
+.testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+@media (max-width: 880px) { .testimonials { grid-template-columns: 1fr; max-width: 540px; margin: 0 auto; } }
+.tcard { position: relative; background: var(--cream-card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.8rem 1.6rem; box-shadow: var(--shadow-sm); margin: 0; display: flex; flex-direction: column; gap: .85rem; overflow: hidden; }
+.tcard::before { content: "\201C"; position: absolute; top: -.4rem; right: 1rem; font-family: var(--serif); font-size: 4.5rem; line-height: 1; color: var(--blue-wash-2); }
+.tcard__stars { color: var(--gold); letter-spacing: .12em; font-size: .95rem; }
+.tcard blockquote { margin: 0; font-size: 1.04rem; color: var(--ink); line-height: 1.55; position: relative; z-index: 1; }
+.tcard figcaption { font-size: .9rem; color: var(--ink-soft); font-weight: 600; margin-top: auto; }
 .specialisms--reverse .specialisms__copy { order: 2; }
 .specialisms--reverse .specialisms__cards { order: 1; }
 @media (max-width: 800px) {
