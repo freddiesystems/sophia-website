@@ -15,9 +15,9 @@
   --blue-bright: #5b7db1;
   --blue-wash: #e7eef7;
   --blue-wash-2: #dbe6f3;
-  --clay: #d2825a;
-  --clay-deep: #b9683f;
-  --clay-wash: #f6e6dc;
+  --clay: #c17e92;
+  --clay-deep: #8c4a63;
+  --clay-wash: #f4e6eb;
   --gold: #c79a4b;
   --line: #e7ddcd;
   --shadow-sm: 0 2px 8px rgba(32, 48, 63, .06);
@@ -75,7 +75,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.08;
 .u-underline { position: relative; white-space: nowrap; }
 .u-underline::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: -.12em; height: .42em;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='14' viewBox='0 0 300 14'%3E%3Cpath d='M2 9C60 3 120 3 180 6s90 4 118 1' fill='none' stroke='%23d2825a' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='14' viewBox='0 0 300 14'%3E%3Cpath d='M2 9C60 3 120 3 180 6s90 4 118 1' fill='none' stroke='%23c17e92' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;
   background-size: 100% 100%; opacity: .9;
 }
 @media (max-width: 560px) { .u-underline { white-space: normal; } }
