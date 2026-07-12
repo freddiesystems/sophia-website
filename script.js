@@ -70,7 +70,12 @@ const CONFIG = {
   };
   if (toggle && menu) {
     toggle.addEventListener("click", () => setMenu(menu.hidden));
-    $$("a", menu).forEach((a) => a.addEventListener("click", () => setMenu(false)));
+    // Close the menu when a real navigation link is tapped — but NOT when
+    // tapping a parent tab that only expands its sub-links (site.js handles that).
+    $$("a", menu).forEach((a) => {
+      if (a.classList.contains("has-sub")) return;
+      a.addEventListener("click", () => setMenu(false));
+    });
   }
 
   /* ---------- reveal on scroll ---------- */

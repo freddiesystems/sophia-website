@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book shelf — Sophia Roth</title>
+  <meta name="description" content="The reading behind the teaching — some of what Sophia has been reading on education and child development, and how each book shapes the way she works." />
+  <meta name="theme-color" content="#3c5a86" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="bookshelf">
+
+  <div data-site-header></div>
+
+  <main>
+    <section class="page-hero page-hero--center">
+      <div class="page-hero__bg" aria-hidden="true"><span class="blob blob--1"></span><span class="blob blob--2"></span></div>
+      <div class="container">
+        <div class="page-hero__inner reveal">
+          <p class="eyebrow eyebrow--center">On my shelf</p>
+          <h1 class="page-hero__title">The reading behind the teaching</h1>
+          <p class="page-hero__sub">
+            I think it matters that the person teaching your child keeps learning too. Here is some
+            of what I've been reading on education and child development, and how each book shapes
+            the way I work. I add to it as I go.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters reveal" role="tablist" aria-label="Filter books by service">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="tutoring" role="tab" aria-selected="false">Tutoring</button>
+          <button class="chip" data-filter="english" role="tab" aria-selected="false">English</button>
+          <button class="chip" data-filter="childcare" role="tab" aria-selected="false">Childcare</button>
+          <button class="chip" data-filter="philosophy" role="tab" aria-selected="false">Philosophy</button>
+        </div>
+
+        <div class="books">
+          <article class="book reveal" data-tags="tutoring english">
+            <div class="book__cover" style="--c1:#3c5a86;--c2:#5b7db1" aria-hidden="true">
+              <span class="book__spine"></span>
+              <span class="book__coverttl">Oracy</span>
+            </div>
+            <div class="book__body">
+              <h3 class="book__title">Oracy</h3>
+              <p class="book__author">Neil Mercer</p>
+              <p class="book__tagrow"><span class="tag">Tutoring</span><span class="tag">English</span></p>
+              <p class="book__note">
+                <strong>What this means for your child:</strong> Mercer's research shows that
+                children understand far more deeply when they reason aloud, rather than only on
+                paper. It's why I gently encourage your child to explain how they reached an
+                answer — when they can talk it through to me, I know it has truly taken root.
+              </p>
+            </div>
+          </article>
+
+          <article class="book reveal" data-tags="philosophy tutoring childcare" data-reveal-delay="100">
+            <div class="book__cover" style="--c1:#b06a4f;--c2:#d98c5f" aria-hidden="true">
+              <span class="book__spine"></span>
+              <span class="book__coverttl">Educated</span>
+            </div>
+            <div class="book__body">
+              <h3 class="book__title">Educated</h3>
+              <p class="book__author">Tara Westover</p>
+              <p class="book__tagrow"><span class="tag">Philosophy</span><span class="tag">Tutoring</span></p>
+              <p class="book__note">
+                <strong>What this means for your child:</strong> Westover's memoir is a quiet
+                reminder that the right teacher, at the right moment, can change the course of a
+                child's life. It keeps me patient, and it keeps me believing in every child I
+                work with, especially the ones who have been overlooked.
+              </p>
+            </div>
+          </article>
+
+          <article class="book reveal" data-tags="tutoring childcare" data-reveal-delay="200">
+            <div class="book__cover" style="--c1:#4f6f52;--c2:#7a9b6e" aria-hidden="true">
+              <span class="book__spine"></span>
+              <span class="book__coverttl">The Education World Master</span>
+            </div>
+            <div class="book__body">
+              <h3 class="book__title">The Education World Master</h3>
+              <p class="book__author">Alexander Brand</p>
+              <p class="book__tagrow"><span class="tag">Tutoring</span><span class="tag">Childcare</span></p>
+              <p class="book__note">
+                <strong>What this means for your child:</strong> A thoughtful look at the craft of
+                teaching — how good educators plan, adapt and read a room. It has sharpened the
+                way I build a learning plan around one child's particular needs, rather than
+                teaching to a generic syllabus.
+              </p>
+            </div>
+          </article>
+
+          <article class="book reveal" data-tags="tutoring philosophy childcare" data-reveal-delay="300">
+            <div class="book__cover" style="--c1:#5e548e;--c2:#7c6fae" aria-hidden="true">
+              <span class="book__spine"></span>
+              <span class="book__coverttl">Multiple Intelligences</span>
+            </div>
+            <div class="book__body">
+              <h3 class="book__title">Multiple Intelligences</h3>
+              <p class="book__author">Howard Gardner</p>
+              <p class="book__tagrow"><span class="tag">Tutoring</span><span class="tag">Philosophy</span></p>
+              <p class="book__note">
+                <strong>What this means for your child:</strong> Gardner's idea that intelligence
+                takes many forms — not just one — sits at the heart of how I teach. Rather than
+                assume a single right way to learn, I look for the way each child learns best,
+                which matters all the more for children with additional needs.
+              </p>
+            </div>
+          </article>
+
+          <article class="book book--soon reveal" data-tags="childcare philosophy" data-reveal-delay="400">
+            <div class="book__cover book__cover--soon" aria-hidden="true">
+              <span class="book__spine"></span>
+              <span class="book__coverttl">More to come</span>
+            </div>
+            <div class="book__body">
+              <h3 class="book__title">Always reading</h3>
+              <p class="book__author">Child development &amp; early years</p>
+              <p class="book__tagrow"><span class="tag">Childcare</span><span class="tag">Philosophy</span></p>
+              <p class="book__note">
+                I'm forever adding to this shelf, particularly on child psychology, special
+                educational needs and the early years. Do ask me what I'm reading at the moment.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="site.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

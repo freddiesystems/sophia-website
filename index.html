@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sophia Roth — Tutoring, English &amp; Childcare in Durham &amp; Online</title>
-  <meta name="description" content="Sophia Roth offers online English for non-native speakers, 11+ &amp; SATs tutoring, and warm, reliable childcare — online across the UK and in person around Durham, with particular care for children with special educational needs and for the early years." />
+  <meta name="description" content="Sophia Roth offers homework help, language tuition, 11+ &amp; SATs prep, tutoring for ages 5–11 and warm, reliable babysitting — online across the UK and in person around Durham, with particular care for children with special educational needs." />
   <meta name="theme-color" content="#3c5a86" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
   <!-- Open Graph / social preview -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Sophia Roth — Tutoring, English &amp; Childcare" />
-  <meta property="og:description" content="Online English for non-native speakers, 11+ &amp; SATs tutoring, and warm childcare from a trainee primary teacher. Online across the UK, in person around Durham." />
+  <meta property="og:description" content="Homework help, language tuition, 11+ &amp; SATs prep, tutoring for ages 5–11 and warm childcare from a trainee primary teacher. Online across the UK, in person around Durham." />
   <meta property="og:image" content="assets/sophia.jpg" />
 
   <!-- Fonts -->
@@ -21,46 +21,11 @@
 
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-page="home" id="top">
 
-  <!-- ============================ NAV ============================ -->
-  <header class="nav" data-nav>
-    <div class="container nav__inner">
-      <a class="brand" href="#top" aria-label="Sophia Roth — home">
-        <span class="brand__mark" aria-hidden="true">S</span>
-        <span class="brand__text">
-          <span class="brand__name">Sophia Roth</span>
-          <span class="brand__role">Tutor · Teacher · Childcare</span>
-        </span>
-      </a>
+  <div data-site-header></div>
 
-      <nav class="nav__links" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#sen">Tutoring &amp; SEN</a>
-        <a href="#top">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#bookshelf">Bookshelf</a>
-      </nav>
-
-      <a href="#book" class="btn btn--primary nav__cta" data-book="intro">Book a free call</a>
-
-      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <div class="mobile-menu" data-mobile-menu hidden>
-      <a href="#services">Services</a>
-      <a href="#sen">Tutoring &amp; SEN</a>
-      <a href="#early-years">Early years</a>
-      <a href="#top">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#bookshelf">Bookshelf</a>
-      <a href="#book" class="btn btn--primary" data-book="intro">Book a free call</a>
-    </div>
-  </header>
-
-  <main id="top">
+  <main>
 
     <!-- ============================ HERO ============================ -->
     <section class="hero">
@@ -79,17 +44,15 @@
             <p>
               I'm training in primary education at St John's College, Durham, and I've spent several
               years working closely with children. You can see my experience
-              <a class="inline-link" href="#experience">here</a>.
+              <a class="inline-link" href="experience.html">here</a>.
             </p>
             <p>
               There is no one-size-fits-all approach to learning. Every child is unique, bringing
               their own strengths, interests, challenges and ways of understanding the world.
               Whatever service I'm providing, taking the time to understand your child properly will
               always be a priority for me. Building that understanding is essential to helping a
-              child make meaningful progress and achieve their full potential — children learn best
-              when they feel safe, understood and gently stretched. Alongside this, I like to make
-              ideas more tangible through play, and to have a child verbalise their thought processes
-              aloud, to embed new concepts more securely and build longer-lasting knowledge.
+              child make meaningful progress — children learn best when they feel safe, understood
+              and gently stretched.
             </p>
             <p>
               Above all, I believe the right encouragement at the right moment can shape the whole
@@ -99,7 +62,7 @@
           </div>
           <div class="hero__cta">
             <a href="#book" class="btn btn--primary btn--lg" data-book="intro">Book a free intro call</a>
-            <a href="#services" class="btn btn--ghost btn--lg">Explore services</a>
+            <a href="services.html" class="btn btn--ghost btn--lg">Explore services</a>
           </div>
           <ul class="hero__trust">
             <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg> DBS checked</li>
@@ -135,438 +98,67 @@
       </div>
     </div>
 
-    <!-- ============================ SERVICES ============================ -->
-    <section id="services" class="section">
+    <!-- ============================ WAYS I CAN HELP ============================ -->
+    <section class="section">
       <div class="container">
         <header class="section__head reveal">
           <p class="eyebrow eyebrow--center">What I offer</p>
-          <h2 class="section__title">Three ways I can help your child</h2>
+          <h2 class="section__title">Five ways I can help your child</h2>
           <p class="section__sub">
-            Each online lesson can also be <strong>in person</strong> if you're near Durham.
-            If you're not sure where to begin, a gentle introductory call is the easiest place
-            to start.
+            Each lesson is online across the UK, and can also be <strong>in person</strong> if
+            you're near Durham. Not sure where to begin? A gentle introductory call is the easiest
+            place to start.
           </p>
         </header>
 
-        <div class="services">
+        <div class="svc-grid">
+          <a class="svc-link reveal" href="homework-help.html">
+            <span class="svc-link__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-pencil"/></svg></span>
+            <h3>Homework help</h3>
+            <p class="svc-link__tag">Online · primary &amp; early secondary</p>
+            <p>Calm, structured support with school homework — building good habits and quiet confidence.</p>
+            <span class="svc-link__foot"><span class="svc-link__price">from £18<span>/hr</span></span><span class="svc-link__go">Learn more →</span></span>
+          </a>
 
-          <!-- ENGLISH -->
-          <article class="svc reveal" id="svc-english">
-            <div class="svc__top">
-              <span class="svc__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-chat"/></svg></span>
-              <div class="svc__price">
-                <span class="svc__from">from</span>
-                <span class="svc__amount">£20<span>/hr</span></span>
-                <span class="svc__trial">Trial hour £15</span>
-              </div>
-            </div>
-            <h3 class="svc__title">English as a foreign language</h3>
-            <p class="svc__tag">Online · all ages · beginner to confident</p>
-            <p class="svc__body">
-              Having lived abroad for a year and taught English in classrooms across Spain and
-              Germany, I understand both how a language is built and how daunting it can feel to
-              begin. I teach gently and through play, using games, stories and real conversation
-              so that new words and grammar become something your child can picture, hear and
-              genuinely use rather than simply memorise. My hope is that they feel able to speak
-              from our very first lesson, and grow to enjoy the language as their confidence
-              settles in.
-            </p>
-            <ul class="svc__list">
-              <li>Classroom experience in Spain and Germany</li>
-              <li>Learning through play, story and conversation</li>
-              <li>Speaking confidence from the first lesson</li>
-            </ul>
-            <div class="svc__actions">
-              <a href="#book" class="btn btn--primary" data-pay="english">Book a £15 trial hour</a>
-              <a href="#contact" class="btn btn--soft">Ask a question</a>
-            </div>
-          </article>
+          <a class="svc-link reveal" data-reveal-delay="80" href="language-tuition.html">
+            <span class="svc-link__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-chat"/></svg></span>
+            <h3>Language tuition</h3>
+            <p class="svc-link__tag">Online · all ages · English as a foreign language</p>
+            <p>English for non-native speakers, taught through play, story and real conversation.</p>
+            <span class="svc-link__foot"><span class="svc-link__price">from £20<span>/hr</span></span><span class="svc-link__go">Learn more →</span></span>
+          </a>
 
-          <!-- BABYSITTING -->
-          <article class="svc reveal" data-reveal-delay="100" id="svc-babysitting">
-            <div class="svc__top">
-              <span class="svc__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-heart"/></svg></span>
-              <div class="svc__price">
-                <span class="svc__from">from</span>
-                <span class="svc__amount">£15<span>/hr</span></span>
-                <span class="svc__trial">Free meet-first call</span>
-              </div>
-            </div>
-            <h3 class="svc__title">Babysitting &amp; childcare</h3>
-            <p class="svc__tag">In person · babies, toddlers and older children</p>
-            <p class="svc__body">
-              I've worked as an au pair and lived with a family caring for their children for a
-              full year, so looking after little ones comes very naturally to me. I love helping
-              children gather happy memories, whether through games and crafts, an afternoon at
-              the park, or a calm hour at home, and I'm just as at ease with the practical side
-              of caring for babies and toddlers, from preparing meals and snacks to changing
-              nappies and settling them for naps. I always take time to understand each child as
-              their own person, because you come to know a child properly only by spending
-              unhurried time together — a responsibility I hold with real care.
-            </p>
-            <ul class="svc__list">
-              <li>Experienced with babies, toddlers and older children</li>
-              <li>Outdoor play, crafts and gentle time at home</li>
-              <li>Meals and snacks prepared with care</li>
-            </ul>
-            <div class="svc__actions">
-              <a href="#book" class="btn btn--primary" data-book="babysitting">Book a free call to meet</a>
-              <a href="#contact" class="btn btn--soft">Ask a question</a>
-            </div>
-          </article>
+          <a class="svc-link reveal" data-reveal-delay="160" href="sats-11-plus.html">
+            <span class="svc-link__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-book"/></svg></span>
+            <h3>SATs &amp; 11+ prep</h3>
+            <p class="svc-link__tag">Online · Year 6 exams and 11+ entrance</p>
+            <p>A structured, personal plan built around your child's gaps, with a report after every lesson.</p>
+            <span class="svc-link__foot"><span class="svc-link__price">from £20<span>/hr</span></span><span class="svc-link__go">Learn more →</span></span>
+          </a>
 
-          <!-- TUTORING -->
-          <article class="svc reveal" data-reveal-delay="200" id="svc-tutoring">
-            <div class="svc__top">
-              <span class="svc__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-book"/></svg></span>
-              <div class="svc__price">
-                <span class="svc__from">from</span>
-                <span class="svc__amount">£20<span>/hr</span></span>
-                <span class="svc__trial">Trial hour £15</span>
-              </div>
-            </div>
-            <h3 class="svc__title">11+ &amp; SATs tutoring</h3>
-            <p class="svc__tag">Online · Year 6 exams and 11+ entrance</p>
-            <p class="svc__body">
-              I'm training to teach in primary schools and studying modules devoted to tutoring,
-              and I've worked within a primary classroom alongside children of every kind — those
-              who race ahead, those who find learning harder, and those for whom English is still
-              new. We begin with a trial lesson, where your child simply shows me what they find
-              difficult and we work through it together, with no obligation to continue. When
-              they're happy to carry on, we sit a past paper, note carefully where the marks slip
-              away, and from there I build a structured plan around the areas that need the most
-              attention.
-            </p>
-            <ul class="svc__list">
-              <li>A written report after every lesson</li>
-              <li>A plan built around your child's specific gaps</li>
-              <li>Understanding through explaining, not memorising</li>
-            </ul>
-            <div class="svc__actions">
-              <a href="#book" class="btn btn--primary" data-pay="sats">Book a £15 trial hour</a>
-              <a href="#contact" class="btn btn--soft">Ask a question</a>
-            </div>
-          </article>
-        </div>
+          <a class="svc-link reveal" data-reveal-delay="80" href="tutoring-5-11.html">
+            <span class="svc-link__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-abc"/></svg></span>
+            <h3>Tutoring for ages 5–11</h3>
+            <p class="svc-link__tag">Online · primary-age English &amp; maths</p>
+            <p>Gentle, playful tutoring across the primary years — filling gaps and rebuilding confidence.</p>
+            <span class="svc-link__foot"><span class="svc-link__price">from £20<span>/hr</span></span><span class="svc-link__go">Learn more →</span></span>
+          </a>
 
-        <!-- Tutoring "how it works" -->
-        <div class="flow reveal">
-          <h3 class="flow__title">How my tutoring works</h3>
-          <ol class="flow__steps">
-            <li>
-              <span class="flow__num">1</span>
-              <h4>A trial lesson</h4>
-              <p>Your child shows me what they find tricky and we work through it together. The hour is £15, with no pressure to continue.</p>
-            </li>
-            <li>
-              <span class="flow__num">2</span>
-              <h4>Finding the gaps</h4>
-              <p>We sit a past paper and note each area they find difficult, so we know just where to focus our time.</p>
-            </li>
-            <li>
-              <span class="flow__num">3</span>
-              <h4>A plan for them</h4>
-              <p>I build a structured plan around those gaps, working through varied questions and encouraging your child to talk their answers through aloud.</p>
-            </li>
-            <li>
-              <span class="flow__num">4</span>
-              <h4>Always in the loop</h4>
-              <p>After every lesson I send you a short report on what we covered and how it went. More often than not, they finish feeling proud of themselves.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== SEN (with tutoring) ===================== -->
-    <section id="sen" class="section section--tint">
-      <div class="container specialisms">
-        <div class="specialisms__copy reveal">
-          <p class="eyebrow">Special educational needs</p>
-          <h2 class="section__title">Tutoring for children who learn differently</h2>
-          <p>
-            I have tutored and worked closely with several students who have additional learning
-            needs. Those sessions taught me how to adapt the way I communicate for children with
-            specific learning difficulties (SpLD), and they showed me just how much of a
-            difference genuinely tailored support can make.
-          </p>
-          <p>
-            When a child has struggled with learning in the past, it often takes a quiet toll on
-            their confidence. We address that naturally, by pitching each lesson at exactly the
-            right level of challenge, so confidence grows hand in hand with their progress.
-          </p>
-          <a href="#book" class="btn btn--primary" data-book="intro">Talk to me about tutoring</a>
-        </div>
-        <div class="specialisms__cards">
-          <div class="mini reveal">
-            <svg class="ico ico--lg" aria-hidden="true"><use href="#i-puzzle"/></svg>
-            <h3>Led by the child</h3>
-            <p>I adapt to the way your child learns, rather than asking them to fit a method.</p>
-          </div>
-          <div class="mini reveal" data-reveal-delay="120">
-            <svg class="ico ico--lg" aria-hidden="true"><use href="#i-heart"/></svg>
-            <h3>Confidence, rebuilt</h3>
-            <p>Lessons pitched at just the right level of challenge, so confidence grows with every step.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== EAL / BILINGUAL (with English) ===================== -->
-    <section id="eal" class="section">
-      <div class="container">
-        <div class="statement reveal">
-          <span class="statement__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-globe"/></svg></span>
-          <p class="eyebrow eyebrow--center">English as an additional language</p>
-          <h2 class="section__title">Support for bilingual &amp; EAL learners</h2>
-          <p>
-            Being raised bilingually is a strength as much as it can be a challenge. I've worked
-            closely with EAL pupils, using visual aids and online learning resources to bridge
-            the gaps and make sure everything we cover is easy for them to reach. If your child's
-            first language isn't English and they're finding language barriers difficult at
-            school, please get in touch — we can talk through the tools and approaches that will
-            help, and I'm happy to share a short document outlining some of the ways that have
-            worked well for me before.
-          </p>
-          <a href="#contact" class="btn btn--primary">Get in touch about EAL support</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== EARLY YEARS (with babysitting) ===================== -->
-    <section id="early-years" class="section section--tint">
-      <div class="container specialisms specialisms--reverse">
-        <div class="specialisms__copy reveal">
-          <p class="eyebrow">The early years</p>
-          <h2 class="section__title">Gentle care for the very youngest, 0–5</h2>
-          <p>
-            I have a real fondness for the early years — the babies, toddlers and pre-schoolers
-            just beginning to make sense of the world. With the youngest children I keep
-            everything calm and unhurried, following their own rhythm for naps and meals and
-            weaving in soft, playful learning through songs, stories and time outdoors.
-          </p>
-          <p>
-            Whether you need a few dependable hours or simply a warm, familiar face your little
-            one looks forward to, this is a stage I genuinely treasure.
-          </p>
-          <a href="#book" class="btn btn--primary" data-book="babysitting">Book a free call to meet</a>
-        </div>
-        <div class="specialisms__cards">
-          <div class="mini reveal">
-            <svg class="ico ico--lg" aria-hidden="true"><use href="#i-sprout"/></svg>
-            <h3>Calm and unhurried</h3>
-            <p>Naps, meals and routines followed with patience and plenty of warmth.</p>
-          </div>
-          <div class="mini reveal" data-reveal-delay="120">
-            <svg class="ico ico--lg" aria-hidden="true"><use href="#i-heart"/></svg>
-            <h3>Playful early learning</h3>
-            <p>Songs, stories and gentle play that nurture little ones without any pressure.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ EXPERIENCE ============================ -->
-    <section id="experience" class="section">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="eyebrow eyebrow--center">A little of my background</p>
-          <h2 class="section__title">Experience &amp; qualifications</h2>
-          <p class="section__sub">Real hours with real children — in classrooms, homes and schools, here and across Europe.</p>
-        </header>
-
-        <div class="creds reveal">
-          <span class="cred"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg> DBS checked</span>
-          <span class="cred"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg> Training in Primary Education, St John's College, Durham</span>
-          <span class="cred"><svg class="ico" aria-hidden="true"><use href="#i-aid"/></svg> CPR qualified</span>
-        </div>
-
-        <ol class="timeline">
-          <li class="reveal">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <span class="timeline__date">2022 – present</span>
+          <a class="svc-link reveal" data-reveal-delay="160" href="babysitting.html">
+            <span class="svc-link__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-heart"/></svg></span>
             <h3>Babysitting</h3>
-            <p>Caring for children of every age around each family's schedule, for families who have come to trust me.</p>
-          </li>
-          <li class="reveal" data-reveal-delay="80">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <span class="timeline__date">Aug 2024</span>
-            <h3>English immersive summer school — Alicante, Spain</h3>
-            <p>Ten days teaching at an English-immersion summer school for six and seven year olds.</p>
-          </li>
-          <li class="reveal" data-reveal-delay="160">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <span class="timeline__date">Jan 2025 – Feb 2026</span>
-            <h3>Volunteer KS2 classroom assistant — Ridgefield Primary School</h3>
-            <p>Supporting Key Stage 2 children in the classroom with their day-to-day learning.</p>
-          </li>
-          <li class="reveal" data-reveal-delay="240">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <span class="timeline__date">Feb 2025</span>
-            <h3>Work-experience exchange — Anton Ree Grundschule, Hamburg</h3>
-            <p>A ten-day teaching exchange in a German primary school, reaching children across a language barrier.</p>
-          </li>
-          <li class="reveal" data-reveal-delay="320">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <span class="timeline__date">Sep 2025 – present</span>
-            <h3>SATs preparation tutoring, online</h3>
-            <p>Guiding Year 6 pupils through their SATs preparation — finding the gaps and building confidence before their exams.</p>
-          </li>
-          <li class="reveal" data-reveal-delay="400">
-            <span class="timeline__dot" aria-hidden="true"></span>
-            <span class="timeline__date">Oct 2025 – Aug 2026</span>
-            <h3>Live-in tutor &amp; au pair — Frankfurt, Germany</h3>
-            <p>Living with a family for a year, caring for and tutoring their children and sharing in their daily life.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
+            <p class="svc-link__tag">In person · babies, toddlers and older children</p>
+            <p>Warm, reliable childcare from an experienced au pair — we always meet on a free call first.</p>
+            <span class="svc-link__foot"><span class="svc-link__price">from £15<span>/hr</span></span><span class="svc-link__go">Learn more →</span></span>
+          </a>
 
-    <!-- ===================== BEYOND / PERSONAL ===================== -->
-    <section id="beyond" class="section section--tint">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="eyebrow eyebrow--center">Outside the classroom</p>
-          <h2 class="section__title">A little of me, beyond the lessons</h2>
-          <p class="section__sub">
-            I've always thought children learn most from people who stay curious and active
-            themselves, so here is a little of what I get up to when I'm not teaching.
-          </p>
-        </header>
-        <div class="beyond">
-          <div class="mini reveal">
-            <svg class="ico ico--lg" aria-hidden="true"><use href="#i-gift"/></svg>
-            <h3>£750 for a school in Jakarta</h3>
-            <p>After researching the low standard of literacy in impoverished communities in Jakarta, Indonesia, I curated a fundraising meal to provide schools with learning materials and to raise awareness of learning poverty — together we raised £750.</p>
-          </div>
-          <div class="mini reveal" data-reveal-delay="120">
-            <svg class="ico ico--lg" aria-hidden="true"><use href="#i-medal"/></svg>
-            <h3>A half marathon</h3>
-            <p>I trained for and ran a half marathon, which taught me as much about patience and quiet persistence as it did about running.</p>
-          </div>
-          <div class="mini reveal" data-reveal-delay="240">
-            <svg class="ico ico--lg" aria-hidden="true"><use href="#i-palette"/></svg>
-            <h3>Arts, crafts and knitting</h3>
-            <p>I love making things by hand — I recently knitted myself a jumper — and I bring that same creativity into the activities I plan with the children I look after.</p>
-          </div>
-          <div class="mini reveal" data-reveal-delay="360">
-            <svg class="ico ico--lg" aria-hidden="true"><use href="#i-anchor"/></svg>
-            <h3>A year abroad &amp; cruise-ship guiding</h3>
-            <p>I spent a year living in Frankfurt, Germany, and I've also worked as a tour guide for cruise ships — I love meeting new people and seeing new places.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ BOOKSHELF ============================ -->
-    <section id="bookshelf" class="section">
-      <div class="container">
-        <header class="section__head reveal">
-          <p class="eyebrow eyebrow--center">On my shelf</p>
-          <h2 class="section__title">The reading behind the teaching</h2>
-          <p class="section__sub">
-            I think it matters that the person teaching your child keeps learning too. Here is
-            some of what I've been reading on education and child development, and how each book
-            shapes the way I work. I add to it as I go.
-          </p>
-        </header>
-
-        <div class="filters reveal" role="tablist" aria-label="Filter books by service">
-          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="chip" data-filter="tutoring" role="tab" aria-selected="false">Tutoring</button>
-          <button class="chip" data-filter="english" role="tab" aria-selected="false">English</button>
-          <button class="chip" data-filter="childcare" role="tab" aria-selected="false">Childcare</button>
-          <button class="chip" data-filter="philosophy" role="tab" aria-selected="false">Philosophy</button>
-        </div>
-
-        <div class="books">
-          <article class="book reveal" data-tags="tutoring english">
-            <div class="book__cover" style="--c1:#3c5a86;--c2:#5b7db1" aria-hidden="true">
-              <span class="book__spine"></span>
-              <span class="book__coverttl">Oracy</span>
-            </div>
-            <div class="book__body">
-              <h3 class="book__title">Oracy</h3>
-              <p class="book__author">Neil Mercer</p>
-              <p class="book__tagrow"><span class="tag">Tutoring</span><span class="tag">English</span></p>
-              <p class="book__note">
-                <strong>What this means for your child:</strong> Mercer's research shows that
-                children understand far more deeply when they reason aloud, rather than only on
-                paper. It's why I gently encourage your child to explain how they reached an
-                answer — when they can talk it through to me, I know it has truly taken root.
-              </p>
-            </div>
-          </article>
-
-          <article class="book reveal" data-tags="philosophy tutoring childcare" data-reveal-delay="100">
-            <div class="book__cover" style="--c1:#b06a4f;--c2:#d98c5f" aria-hidden="true">
-              <span class="book__spine"></span>
-              <span class="book__coverttl">Educated</span>
-            </div>
-            <div class="book__body">
-              <h3 class="book__title">Educated</h3>
-              <p class="book__author">Tara Westover</p>
-              <p class="book__tagrow"><span class="tag">Philosophy</span><span class="tag">Tutoring</span></p>
-              <p class="book__note">
-                <strong>What this means for your child:</strong> Westover's memoir is a quiet
-                reminder that the right teacher, at the right moment, can change the course of a
-                child's life. It keeps me patient, and it keeps me believing in every child I
-                work with, especially the ones who have been overlooked.
-              </p>
-            </div>
-          </article>
-
-          <article class="book reveal" data-tags="tutoring childcare" data-reveal-delay="200">
-            <div class="book__cover" style="--c1:#4f6f52;--c2:#7a9b6e" aria-hidden="true">
-              <span class="book__spine"></span>
-              <span class="book__coverttl">The Education World Master</span>
-            </div>
-            <div class="book__body">
-              <h3 class="book__title">The Education World Master</h3>
-              <p class="book__author">Alexander Brand</p>
-              <p class="book__tagrow"><span class="tag">Tutoring</span><span class="tag">Childcare</span></p>
-              <p class="book__note">
-                <strong>What this means for your child:</strong> A thoughtful look at the craft of
-                teaching — how good educators plan, adapt and read a room. It has sharpened the
-                way I build a learning plan around one child's particular needs, rather than
-                teaching to a generic syllabus.
-              </p>
-            </div>
-          </article>
-
-          <article class="book reveal" data-tags="tutoring philosophy childcare" data-reveal-delay="300">
-            <div class="book__cover" style="--c1:#5e548e;--c2:#7c6fae" aria-hidden="true">
-              <span class="book__spine"></span>
-              <span class="book__coverttl">Multiple Intelligences</span>
-            </div>
-            <div class="book__body">
-              <h3 class="book__title">Multiple Intelligences</h3>
-              <p class="book__author">Howard Gardner</p>
-              <p class="book__tagrow"><span class="tag">Tutoring</span><span class="tag">Philosophy</span></p>
-              <p class="book__note">
-                <strong>What this means for your child:</strong> Gardner's idea that intelligence
-                takes many forms — not just one — sits at the heart of how I teach. Rather than
-                assume a single right way to learn, I look for the way each child learns best,
-                which matters all the more for children with additional needs.
-              </p>
-            </div>
-          </article>
-
-          <article class="book book--soon reveal" data-tags="childcare philosophy" data-reveal-delay="400">
-            <div class="book__cover book__cover--soon" aria-hidden="true">
-              <span class="book__spine"></span>
-              <span class="book__coverttl">More to come</span>
-            </div>
-            <div class="book__body">
-              <h3 class="book__title">Always reading</h3>
-              <p class="book__author">Child development &amp; early years</p>
-              <p class="book__tagrow"><span class="tag">Childcare</span><span class="tag">Philosophy</span></p>
-              <p class="book__note">
-                I'm forever adding to this shelf, particularly on child psychology, special
-                educational needs and the early years. Do ask me what I'm reading at the moment.
-              </p>
-            </div>
-          </article>
+          <a class="svc-link reveal" data-reveal-delay="240" href="sen.html">
+            <span class="svc-link__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-puzzle"/></svg></span>
+            <h3>Special educational needs</h3>
+            <p class="svc-link__tag">Tutoring for children who learn differently</p>
+            <p>Genuinely tailored support that meets your child where they are, at just the right level of challenge.</p>
+            <span class="svc-link__foot"><span class="svc-link__price">Let's talk</span><span class="svc-link__go">Learn more →</span></span>
+          </a>
         </div>
       </div>
     </section>
@@ -600,23 +192,6 @@
       </div>
     </section>
 
-    <!-- ============================ CONFIDENTIALITY ============================ -->
-    <section id="confidentiality" class="section">
-      <div class="container">
-        <div class="statement statement--quiet reveal">
-          <span class="statement__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-shield"/></svg></span>
-          <p class="eyebrow eyebrow--center">Confidentiality &amp; professionalism</p>
-          <h2 class="section__title">Your family's privacy, respected</h2>
-          <p>
-            I will never share the messages we exchange, or any information about your child, with
-            anyone outside our arrangement. I'm committed to protecting the privacy of every
-            family I work with, and to upholding a high standard of professionalism in everything
-            I do.
-          </p>
-        </div>
-      </div>
-    </section>
-
     <!-- ============================ BOOK / CONVERT ============================ -->
     <section id="book" class="section section--book">
       <div class="container">
@@ -637,7 +212,7 @@
         <div class="booking">
           <div class="booking__card reveal">
             <span class="booking__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-chat"/></svg></span>
-            <h3>English (TEFL)</h3>
+            <h3>Language tuition</h3>
             <p class="booking__price">£20<span>/hr</span> · trial £15</p>
             <p class="booking__desc">Online across the UK, or in person near Durham.</p>
             <a href="#book" class="btn btn--primary btn--block" data-pay="english">Book a £15 trial hour</a>
@@ -647,7 +222,7 @@
           <div class="booking__card booking__card--feature reveal" data-reveal-delay="100">
             <span class="booking__flag">Most booked</span>
             <span class="booking__icon" aria-hidden="true"><svg class="ico ico--lg"><use href="#i-book"/></svg></span>
-            <h3>11+ &amp; SATs tutoring</h3>
+            <h3>SATs &amp; 11+ prep</h3>
             <p class="booking__price">£20<span>/hr</span> · trial £15</p>
             <p class="booking__desc">A structured, personal plan, with a report after every lesson.</p>
             <a href="#book" class="btn btn--primary btn--block" data-pay="sats">Book a £15 trial hour</a>
@@ -701,55 +276,9 @@
     </section>
   </main>
 
-  <!-- ============================ FOOTER ============================ -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="brand__mark" aria-hidden="true">S</span>
-        <div>
-          <strong>Sophia Roth</strong>
-          <p>Tutoring, English &amp; childcare — Durham &amp; online.</p>
-        </div>
-      </div>
-      <nav class="footer__links" aria-label="Footer">
-        <a href="#services">Services</a>
-        <a href="#sen">Tutoring &amp; SEN</a>
-        <a href="#top">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#book">Book</a>
-      </nav>
-      <div class="footer__meta">
-        <p>DBS checked · St John's College, Durham</p>
-        <p>© <span data-year>2026</span> Sophia Roth</p>
-      </div>
-    </div>
-  </footer>
+  <div data-site-footer></div>
 
-  <!-- ============================ SVG ICON SPRITE ============================ -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-    <defs>
-      <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></symbol>
-      <symbol id="i-cap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 4L2 9l10 5 10-5-10-5z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6 11v5c0 1 2.5 3 6 3s6-2 6-3v-5M22 9v5"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></symbol>
-      <symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.6l1-5.8L3.5 9.7l5.9-.9L12 3z"/></symbol>
-      <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H9l-4 3v-3H4z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M8 9h8M8 12h5"/></symbol>
-      <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 20s-7-4.4-7-9.5A3.5 3.5 0 0 1 12 8a3.5 3.5 0 0 1 7 2.5C19 15.6 12 20 12 20z"/></symbol>
-      <symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5a2 2 0 0 1 2-2h6v16H6a2 2 0 0 0-2 2zM20 5a2 2 0 0 0-2-2h-6v16h6a2 2 0 0 1 2 2z"/></symbol>
-      <symbol id="i-puzzle" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M10 4a2 2 0 1 1 4 0v2h3v3a2 2 0 1 0 0 4v3h-3a2 2 0 1 0-4 0H7v-3a2 2 0 1 1 0-4V6h3z"/></symbol>
-      <symbol id="i-sprout" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21v-7M12 14C12 9 8 7 4 7c0 5 4 7 8 7zM12 12c0-4 4-6 8-6 0 4-4 6-8 6z"/></symbol>
-      <symbol id="i-cake" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 21h16M5 21v-7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7M12 8V5M9 8V6M15 8V6"/></symbol>
-      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 7l8 6 8-6"/></symbol>
-      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3l1.5 4-2 1.5a12 12 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
-      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 20l1.4-4A8 8 0 1 1 9 19.2L4 20z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 9c0 3 3 6 6 6 1 0 1.5-1 1.5-1l-2-1-1 1c-1 0-2.5-1.5-2.5-2.5l1-1-1-2S9 8 9 9z"/></symbol>
-      <symbol id="i-gift" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 12v8H4v-8M2 7h20v5H2zM12 7v13M12 7C12 7 11 3 8.5 3.5S9.5 7 12 7zM12 7s1-4 3.5-3.5S16 7 12 7z"/></symbol>
-      <symbol id="i-medal" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8.5 3l3 6M15.5 3l-3 6"/><circle cx="12" cy="15" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="15" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
-      <symbol id="i-palette" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3a9 9 0 0 0 0 18c1.1 0 1.8-.9 1.8-1.8 0-.5-.2-.9-.5-1.2-.3-.4-.5-.8-.5-1.2 0-.9.7-1.6 1.6-1.6H16a5 5 0 0 0 5-5c0-3.9-4-7.2-9-7.2z"/><circle cx="7.5" cy="11.5" r="1" fill="currentColor"/><circle cx="12" cy="8" r="1" fill="currentColor"/><circle cx="16" cy="11" r="1" fill="currentColor"/></symbol>
-      <symbol id="i-aid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 8v8M8 12h8"/></symbol>
-      <symbol id="i-anchor" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 7v13M5 12a7 7 0 0 0 14 0M4 12H3m18 0h-2"/></symbol>
-      <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
-    </defs>
-  </svg>
-
+  <script src="site.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>
