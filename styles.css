@@ -211,6 +211,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.08;
 .prose { max-width: 720px; margin: 0 auto; }
 .prose p { color: var(--ink-soft); font-size: 1.06rem; margin: 0 0 1.1rem; }
 .prose p strong { color: var(--ink); }
+.prose p.lead { color: var(--ink); font-size: 1.22rem; line-height: 1.55; margin-bottom: 1.4rem; }
 .prose h3 { font-size: 1.5rem; margin: 2rem 0 .6rem; }
 .prose ul { margin: 0 0 1.4rem; padding: 0; list-style: none; display: grid; gap: .6rem; }
 .prose ul li { position: relative; padding-left: 1.7rem; color: var(--ink); font-size: 1rem; }
